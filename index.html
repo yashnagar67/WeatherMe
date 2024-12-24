@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherMe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><span id="daynight"></span></div>
+            <div class="title">WeatherMe</div>
+            <div class="time" id="time">21:00 pm</div>
+        </header>
+      
+        <main>
+            <div class="temperature-toggle">
+                <label for="temp-c">°C</label>
+                <input type="checkbox" id="temp-toggle" />
+                <label for="temp-f">°F</label>
+            </div>
+            <div class="search">
+                <input type="text" 
+ id="city" placeholder="Search location..." />
+              <button class="submit-button" id="submit" type="submit">Subit</button>
+            </div>
+            <div class="forecast">
+                <div class="current-weather">
+                    <h2 id="cityname">Burdwan</h2>
+                    <div class="date"><span id="tm"></span></div>
+                    <div class="temperature"  id="temperature">27°C</div>
+                    <div class="weather-icon"><span id="emojiElement"></span></div>
+                    <div class="details">
+                        <p>HUMIDITY: <span id="humidity"></span>%</p>
+                        <p>VISIBILITY: <span id="Visiblity"></span>km</p>
+                        <p>AIR PRESSURE: <span id="Airpressure"></span></p>
+                        <p>WIND: <span id="wind_mph"></span>mph</p>
+                    </div>
+                </div>
+               
+            </div>
+        </main>
+    </div>
+   <script src="script.js"></script>
+   <script src="Sript.js"></script>
+
+</body>
+  
+</html>

@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 1.5rem;
+}
+
+.temperature-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.temperature-toggle label {
+  margin: 0 10px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: none;
+}
+
+.forecast {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current-weather {
+  background: linear-gradient(135deg, #7928CA, #FF0080);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.current-weather h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.current-weather .date {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.current-weather .temperature {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.current-weather .weather-icon {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.current-weather .details {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.hourly-forecast {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 10px;
+}
+
+.hourly-forecast .hour {
+  background: linear-gradient(135deg, #4B79A1, #283E51);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 5px;
+  min-width: 80px;
+}
+
+
+/* General button styles */
+.submit-button {
+  height:10vh;
+    background-color: #007BFF; /* Green background */
+    border: none;             /* Remove borders */
+    color: white;             /* White text */
+    padding: 15px 32px;       /* Some padding */
+    text-align: center;       /* Centered text */
+    text-decoration: none;    /* Remove underline */
+    display: inline-block;    /* Get it to fit its contents */
+    font-size: 16px;          /* Increase font size */
+    margin: 0px 2px;          /* Some margin */
+    cursor: pointer;          /* Pointer/hand icon */
+    border-radius: 4px;      /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.submit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Active/Pressed effect */
+.submit-button:active {
+    background-color: #367c39; /* Even darker green when pressed */
+    box-shadow: 0 5px #666;    /* Add a shadow */
+    transform: translateY(4px); /* Move the button a bit downwards */
+}
